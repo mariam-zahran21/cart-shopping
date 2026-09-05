@@ -1,0 +1,17 @@
+{
+  "name": "shopping-cart",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "postbuild": "node -e \"require('fs').copyFileSync('index.html', 'dist/index.html')\"",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}
